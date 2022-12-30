@@ -1,0 +1,29 @@
+{
+  "name": "js-mern-stack",
+  "version": "1.0.0",
+  "description": "learn mern stack from travesy media playlist rest api ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server":"nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MustaphaBousilDev/node-js-mern-stack.git"
+  },
+  "author": "Mugiwara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MustaphaBousilDev/node-js-mern-stack/issues"
+  },
+  "homepage": "https://github.com/MustaphaBousilDev/node-js-mern-stack#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
