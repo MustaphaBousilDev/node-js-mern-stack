@@ -6,7 +6,7 @@ const Goal=require('../model/goalModel')
 const getGoals=asyncHandler(async (req,res)=>{
     const goals=await Goal.find()
     res.status(200).json({goals})
-})
+})    
 
 
 //@desc set goal
