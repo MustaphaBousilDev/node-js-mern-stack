@@ -24,4 +24,12 @@
 ---------Express Handle Async 
 cmd(outside backend folder)(npm i express-async-handler)
 
+
+
+//partie two in this course (JWT)
+-->cmd(outside backend fodler)(npm i bcryptjs)
+-->cmd(outside backend fodler)(npm i jsonwebtoken)
+
+
+
 */
