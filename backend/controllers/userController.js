@@ -10,11 +10,10 @@ const User=require('../model/userModel')
 //@route POST/api/users
 //@access Public 
 const registerUser=asyncHandler(async (req,res)=>{
-    const {name,email,password}=req.body 
+    const {name,email,password}=req.body //<=> set name , email, password from body requist
     if(!name || !email || !password){
         res.status(400)
-        throw new Error('Please add fucking data to this fucking field ')
-    }
+        throw new Error('Please add fucking data to this fucking field ')}
     //check if user is exists
     const userExists=await User.findOne({email})
     if(userExists){
@@ -25,7 +24,7 @@ const registerUser=asyncHandler(async (req,res)=>{
     const salt=await bcrypt.genSalt(10)  
     const hashedPassword=await bcrypt.hash(password,salt)
     //create user 
-    const user=await User.create({
+    const user=await User.create({  
         name,email ,
         password:hashedPassword
     })
@@ -46,7 +45,19 @@ const registerUser=asyncHandler(async (req,res)=>{
 //@route POST/api/users/login 
 //@access Public 
 const loginUser=asyncHandler(async (req,res)=>{
-    res.json({message:'fucking login user'})
+    const {email,password}=req.body
+    //Check for user email
+    const user=await User.findOne({email})
+    if(user && (await bcrypt.compare(password,user.password))){
+        res.json({
+            _id:user.id ,
+            name:user.name ,
+            email:user.email 
+        })
+    }else{
+        res.status(400)
+        throw new Error('Invalid fucking this user')
+    }
 })
 
 
