@@ -31,5 +31,10 @@ cmd(outside backend folder)(npm i express-async-handler)
 -->cmd(outside backend fodler)(npm i jsonwebtoken)
 
 
+//partie threen redux and react 
+-->cmd outside backend folder (npx create-react-app@latest frontend --template redux)
+this command for create react app with package redux 
+
+
 
 */
