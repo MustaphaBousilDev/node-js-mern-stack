@@ -35,6 +35,16 @@ cmd(outside backend folder)(npm i express-async-handler)
 -->cmd outside backend folder (npx create-react-app@latest frontend --template redux)
 this command for create react app with package redux 
 
+----------------------------------------------
+go to package.json outside folder frontend and backend 
+-->modifie 
+ "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client" :"npm start --prefix frontend"<-add this 
+  },
+
+--and close server and write in cmd(npm run client)
 
 
 */
