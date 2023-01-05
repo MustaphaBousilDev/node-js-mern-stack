@@ -48,5 +48,6 @@ go to package.json outside folder frontend and backend
 
 
 #cmd inside frontend(cmd::npm i react-router-dom)
+#cmd::npm i react-icons
 
 */
