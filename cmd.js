@@ -47,4 +47,6 @@ go to package.json outside folder frontend and backend
 --and close server and write in cmd(npm run client)
 
 
+#cmd inside frontend(cmd::npm i react-router-dom)
+
 */
