@@ -50,4 +50,17 @@ go to package.json outside folder frontend and backend
 #cmd inside frontend(cmd::npm i react-router-dom)
 #cmd::npm i react-icons
 
+#cmd:npm i -D concurrently(outside folder frontend)
+#go to package.json add 
+"scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev":"concurrently \"npm run server\" \"npm run client\"  " <- new line
+},
+#cmd::npm run dev (this command now can start server frontend and backend)
+
+
+------------------------------------------------------
+
 */
