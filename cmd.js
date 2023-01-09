@@ -60,7 +60,7 @@ go to package.json outside folder frontend and backend
 },
 #cmd::npm run dev (this command now can start server frontend and backend)
 
-
+#cmd::inside(frontend)npm i axios react-toastify
 ------------------------------------------------------
 
 */
