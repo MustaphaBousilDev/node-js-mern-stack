@@ -1,5 +1,7 @@
 import {createSlice,createAsyncThunk} from '@reduxjs/toolkit'
+
 import authService from './authService'
+
 //Get User from LocalStorage
 const user=JSON.parse(localStorage.getItem('user'))
 const initialState={
@@ -14,7 +16,7 @@ const initialState={
 export const register=createAsyncThunk('auth/register',async (user,thunkAPI)=>{
     try{
         return await authService.register(user)
-    }catch(error){
+    }catch(error){  
         const message=
         (error.response && 
         error.response.data 
