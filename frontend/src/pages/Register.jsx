@@ -7,7 +7,7 @@ import {register,reset} from '../features/auth/authSlice'
 import Spinner from '../components/Spinner'
 const Register = () => {
   const [formData,setFormData]=useState({
-    name:'',
+    name:'',  
     email:'',
     password:'',
     password2:''
